@@ -25,6 +25,11 @@ namespace Eshop.Controllers
               return View(await _context.Accounts.ToListAsync());
         }
 
+        public async Task<IActionResult> TestGit()
+        {
+            return Ok();
+        }
+
         // GET: Accounts/Details/5
         public async Task<IActionResult> Details(int? id)
         {
